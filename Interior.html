@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interior Design</title>
+  <link rel="stylesheet" href="Interior.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <script src="https://kit.fontawesome.com/fef843a56a.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="Script.js"></script>
+  <script src="https://kit.fontawesome.com/95a02bd20d.js"></script>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i&display=swap");
+.interiorContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* .interiornavbar {
+    margin-top: 90px;
+}
+.interior-banner {
+    height: 30vw;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Images/id-interiors-3B8t4vnkXt0-unsplash\ \(1\).jpg);
+    background-size: 100% 100%;
+}
+
+.banner-heading {
+   font-size: 4rem;
+   color: #fff;
+   font-weight: 600;
+   letter-spacing: 10px;
+   text-align: center;
+}
+.interior-para{
+    color: #fff;
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+}
+.getintouch-btn{
+    height: 6vh;
+    width: 10vw;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+} */
+.about-company-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-heading{
+font-size: 3rem;
+text-align: center;
+margin-top: 5%;
+}
+.about-para{
+    font-size: 1.1rem;
+    justify-content: center;
+    text-align: justify;
+}
+.wt-we-do{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;  
+    margin-top: 5%;
+    border-bottom: 2px solid black; 
+  width: 40%;
+  margin: 0 auto;
+}
+.interior-cards{
+  display: flex;
+  margin-top: 10%;
+  justify-content: space-around;
+}
+
+.contact-content{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  border: 1px solid grey;
+  margin-top: 5%;
+}
+.start-planning-heading{
+  margin-top: 5vw;
+  margin-left: 7vw;
+  font-family: system-ui;
+}
+.contact-btn{
+  padding: 2vh 2vw;
+  border: none;
+  font-weight: 700;
+  border-radius: 10px;
+  background-color:#000;
+  color: #fff;
+  margin-left: 20vw;
+}
+.image{
+  background-image: url(/Images/sofaset.png);
+  height: 40vh;
+  width: 40vw;
+}
+.card {
+  width: 350px;
+  height: 300px;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+}
+.card .front {
+  border-radius: 7px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.card .back {
+  width: 100%;
+  height: 100%;
+  background: #4678b5;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition: 0.5s;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+
+
+}
+
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+
+.card .back .details {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.card .back .details .caption {
+  font-weight: 100;
+  font-style: italic;
+}
+.caption{
+  margin-top: 2%;
+}
+
+.card .back .details .caption,
+h2,
+span {
+  color: whitesmoke;
+}
+.card-container{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+.contact-div{
+  display: flex;
+  justify-content: space-around;
+  height: 56vh;
+  width: 100%;
+  margin-top: 7%;
+  background-color:rgb(226, 223, 223);
+}
+.start-heading{
+  color: #000;
+  font-family: system-ui;
+  margin-top: 25%;
+}
+.pulse {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin-left: 30%;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: 1s;
+  position: relative;
+  box-sizing: border-box;
+  transition: all 500ms ease; 
+}
+.pulse:hover{
+  color: black;
+  border: black solid 2px;
+  background:lavenderblush;
+}
+
+.image{
+margin-top: 2%;
+}
+.our-contents-int{
+  height: auto;
+  width: 100%;
+  margin-top: 5%;
+}
+.our-work-heading{
+  font-family: Georgia, serif;
+  font-weight: bold;
+  margin-left: 11%;
+}
+.to-do{
+  color: #4678b5;
+  margin-left: 11%;
+}
+.flow{
+  color: #4678b5;
+}
+.tag-para{
+  margin-left: 11%;
+  font-size: 1.5rem;
+}
+.points{
+  margin-left: 10%;
+  font-size: 1.2rem;
+}
+.card-heading{
+  color: #000;
+}
+@media only screen and (max-width: 768px) {
+    .banner-heading {
+        font-size: 2rem;
+        margin: 4% 5% 0 3%;
+    }
+    .interior-banner {
+        height: 50vw;
+    }
+    .getintouch-btn{
+      height: 6vh;
+      width: 17vw;
+      font-size: .7rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 50%;
+  }
+  .contact-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+    margin-top: 7%;
+  }
+  .start-heading{
+    font-size: 1rem;
+    text-align: center;
+  }
+ .card{
+  margin-top: 7%;
+ }
+ .interiorContainer{
+  box-sizing: border-box;
+  overflow: hidden;
+ }
+ .image{
+  background-image: url(/Images/sofaset.png);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 40vw;
+}
+}
+  </style>
+</head>
+<body>
+  <a>click</a>
+  
+  
+  <div class="interiorContainer">
+   
+    <div class="about-company-content">
+      <h1 class="about-heading">About Our Company</h1>
+      <p class="about-para">
+        With the vision of becaming a best interior desigh and architrecture studio in the country.We have gathered a
+        team of passionate professinals.We FUSE your vision withy<br>
+        OUR ideas to create space that you've dreamt of and much more. The outcome is, meticulosly detailed buildings
+        and interiors with a distnict presence.Our<br>
+        clients are at tghe centre of our thoughts and intrests.Theirs ways of living and theirs desires, influnece the
+        way we approach the project.<br>
+        prresent an innovative method of working with our clients we fulfill their aesthetic needs. Our growth
+        determines our exclusivity quality of service and our responsible<br>
+        approach to the work by our complete team.
+      </p>
+    </div>
+    <div class="wt-we-do">
+      <h1>WHAT WE DO</h1>
+    </div>
+     <div class="card-container">
+      <div>
+     <div class="card">
+      <div class="front">
+        <img src="https://images.unsplash.com/photo-1618221710640-c0eaaa2adb49?auto=format&fit=crop&q=80&w=1632&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="100%" width="100%" alt="" />
+      </div>
+      <div class="back">
+        <img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+    <div>
+      <h2 class="card-heading">LIVING ROOM</h2>
+      <div class="caption1">
+        " A living room in your house is the first<br> room
+        anyone views when he enters "
+      </div> 
+    </div>
+  </div>
+  <div>
+    <div class="card">
+      <div class="front">
+        <img src="https://images.unsplash.com/photo-1560185127-1902ccdc5094?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="100%" width="100%" alt="" />
+      </div>
+      <div class="back">
+        <img src="https://images.unsplash.com/photo-1684182297398-bceda5583349?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="100%" width="100%" alt="" />
+        <div class="details">
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2 class="card-heading">MODULAR KITCHEN</h2>
+      <div class="caption">
+        " A modular kitchen has clean, modern and trendy look "
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="card">
+      <div class="front">
+        <img src="https://images.unsplash.com/photo-1609766975297-92f28e2db184?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="100%" width="100%" alt="" />
+      </div>
+      <div class="back">
+        <img src="https://images.unsplash.com/photo-1618221823713-ca8c0e6c9992?auto=format&fit=crop&q=80&w=1632&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D+" height="100%" width="100%" alt="" />
+      </div>
+    </div>
+    <div>
+      <div class="details">
+        <h2 class="card-heading">BEDROOM</h2>
+        <div class="caption">
+          "Bedroom offers a retreat from the stresses of everyday <br>
+          living "
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <div class="card-container">
+    <div>
+    <div class="card">
+     <div class="front">
+       <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/3b7086130720039.Y3JvcCw5OTksNzgyLDAsMzM5.jpg" height="100%" width="100%" alt="" />
+     </div>
+     <div class="back">
+     </div>
+   </div>
+   <div>
+    <div class="details">
+      <h2 class="card-heading">POOJA ROOM</h2>
+      <div class="caption">
+        " Its an essential part of our home interior.<br>
+         where you spend your time peacefully "
+      </div>
+    </div>
+   </div>
+  </div>
+  <div>
+   <div class="card">
+     <div class="front">
+       <img src="https://images.unsplash.com/photo-1623114112821-08b8c8d4e42d?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="100%" width="100%" alt="" />
+     </div>
+     <div class="back"> 
+     </div>
+   </div>
+   <div>
+    <div class="details">
+      <h2 class="card-heading">BATHROOM</h2>
+      <div class="caption">
+        "It washes away your troubles by adding Bubbles to<br>
+          your life"
+      </div>
+    </div>
+   </div>
+  </div>
+  <div>
+   <div class="card">
+     <div class="front">
+       <img src="https://images.unsplash.com/photo-1508361727343-ca787442dcd7?auto=format&fit=crop&q=80&w=1603&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="100%" width="100%" alt="" />
+     </div>
+     <div class="back">
+     </div>
+   </div>
+   <div>
+    <div class="details">
+      <h2 class="card-heading">FALSE CEILING</h2>
+      <div class="caption">
+        "House is not a home unless it is decorated by the false<br>-ceiling "
+      </div> 
+    </div>
+   </div>
+  </div>
+ </div>
+ <div class="card-container">
+  <div>
+  <div class="card">
+   <div class="front">
+     <img src="https://images.unsplash.com/photo-1462826303086-329426d1aef5?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="100%" width="100%" alt="" />
+   </div>
+   <div class="back">
+   </div>
+ </div>
+ <div>
+  <div class="details">
+    <h2 class="card-heading">COMMERCIAL</h2>
+    <div class="caption">
+      " Transforming Workspaces, Elevating Business  "
+    </div>
+  </div>
+ </div>
+</div>
+<div>
+ <div class="card">
+   <div class="front">
+     <img src="https://images.unsplash.com/photo-1688646953306-5ec93eab8c06?auto=format&fit=crop&q=80&w=1376&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="100%" width="100%" alt="" />
+   </div>
+   <div class="back">
+   </div>
+ </div>
+ <div>
+  <div class="details">
+    <h2 class="card-heading">RESIDENTAL</h2>
+    <div class="caption">
+      "Designing Your Sanctuary, Your Way."
+    </div>
+  </div>
+ </div>
+</div>
+<div>
+ <div class="card">
+   <div class="front">
+     <img src="https://images.unsplash.com/photo-1500004621732-74cd4ad4d53e?auto=format&fit=crop&q=80&w=1469&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" height="100%" width="100%" alt="" />
+   </div>
+   <div class="back">
+   </div>
+ </div>
+ <div>
+  <div class="details">
+    <h2 class="card-heading">ARCHITECTURAL</h2>
+    <div class="caption">
+      "Crafting Interiors That Complement Architecture "
+    </div>
+  </div>
+ </div>
+</div>
+</div>
+<div class="our-contents-int">
+  <h1 class="our-work-heading">OUR WORK <span class="flow"> &nbsp;FLOW</span></h1>
+  <p class="tag-para">"Elevating Spaces: Our Seamless <span class="flow">Design Process</span> for Your <span class="flow">Dream Interiors</span>"</p>
+  <ul class="points">
+    <li>Crafting bespoke designs by aligning your vision, preferences, and budget with the project's scope and purpose.</li>&nbsp;
+    <li>Translating your vision into a captivating design concept, complete with mood boards, color palettes, and sketches.</li>&nbsp;
+    <li>Curate furnishings and fixtures harmonizing with the design, while ensuring functionality and ergonomic excellence.</li>&nbsp;
+    <li>Prioritizing sustainability with eco-friendly materials and energy-efficient solutions for responsible design.</li>&nbsp;
+    <li>Integrating cutting-edge smart home tech and optimizing electrical and data infrastructure for modern living.</li>&nbsp;
+    <li>Bring your vision to life with stunning 3D renderings that provide a vivid preview of your design.</li>&nbsp;
+    <li>Carefully curate furnishings and décor to bring the design plan to life, ensuring meticulous attention to detail for a harmonious interior.</li>&nbsp;
+    <li>Incorporate universal design principles to ensure that the space caters to the diverse needs of all users, including those with disabilities.</li>
+  </ul>
+ </div>
+<div class="contact-div">
+  <div class="sentence">
+    <h2 class="start-heading"> START PLANNING YOUR HOME INTERIORS NOW</h2>
+    <button class="pulse">CONTACT US</button>
+  </div>
+  <div class="image">
+    <img src="Images/sofaset.png"/>
+  </div>
+</div>
+
+  </div>
+</body>
